@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+      
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+       
+      <link rel="stylesheet" href="css/style.css">
+    
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Changa+One" />
+      
+</head>
+<body>
+    <div class="container">
+     <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="columna-principal">
+       <div id="contenedor-titulo">
+          <div class="centrado">
+              <h2 id="titulo">Personal information</h2>
+              <img src="img/scorenote.jpg" id="logo">
+          </div>
+       </div>
+       <div id="contenedor-principal-two" class="row">
+           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-lg-offset-2" id="contenedor-formulario">
+              <div class="centrado" id="centrado-two">
+               <form>
+                   <div class="form-group">
+                    <label class="descripcion">Nombre</label>
+                       
+                    <input type="text" class="form-control input" id="txt-Name" placeholder="Nombre" readonly>
+                   </div>
+                   <div class="form-group">
+                    <label class="descripcion">Apellido</label>
+                    <input type="text" class="form-control input" id="txt-Last" placeholder="Apellido" readonly>
+               </div>
+               <div class="form-group">
+                    <label class="descripcion">Genero</label>
+                    <input type="text" class="form-control input" id="txt-Gender" placeholder="Genero">
+               </div>
+                   <div class="form-group">
+                       <label class="descripcion">Fecha de Nacimiento</label>
+                       <input type="text" class="form-control input" id="txt-Date" placeholder="DD/MM/YYYY">
+                   </div>
+                   <div class="form-group">
+                       <label class="descripcion">Pais</label>
+                       <div class="row">
+                       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                           <img src="img/world.png" class="form-element icono" >
+                       </div>
+                           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                               <input type="text" class="form-control input form-element" id="txt-Country" placeholder="Pais">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label for="city" class="descripcion">Ciudad</label>
+                       <div class="row">
+                       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                           <img src="img/location.png" class="form-element icono" >
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                           <input type="text" class="form-control input form-element" id="txt-City" placeholder="Ciudad">
+                       </div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label for="movil" class="descripcion">Numero de Celular</label>
+                       <div class="row">
+                          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                           <img src="img/phone.png" class="form-element icono" >
+                          </div>
+                          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                           <input type="text" class="form-control input" id="txt-Movil" placeholder="ejemplo: +57 312 598 2522">
+                          </div>
+                       </div>
+                   </div>
+               </form>
+               </div>
+           </div>  
+           
+           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4" id="contenedor-formulario">
+               <div class="centrado" id="centrado2">
+               <div class="form-group">
+                    <label class="descripcion">Nombre Artístico</label>
+                    <div class="row">
+                       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="img/star.png" class="form-element icono" >
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <input type="text" class="form-control input" id="tartistic name" placeholder="Nombre Artistico">
+                       </div>
+                    </div>
+               </div>
+               <div class="form-group">
+                    <label class="descripcion">Tipo de Voz</label>
+                    <div class="row">
+                       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="img/microphone.png" class="form-element icono" >
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <input type="text" class="form-control input" id="txt-voice" placeholder="Ejemplo: Baritono">
+                       </div>
+                    </div>
+               </div>
+               <div class="form-group">
+                    <label class="descripcion">Instrumento</label>
+                    <div class="row">
+                       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="img/drums.png" class="form-element icono" >
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <input type="text" class="form-control input" id="txt-instrument" placeholder="Ejemplo: Bateria">
+                       </div>
+                    </div>
+               </div>
+               
+               <div class="form-group">
+                    <label class="descripcion">Musica Favorita</label>
+                    <div class="row">
+                       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="img/vinyl.png" class="form-element icono" >
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <input type="text" class="form-control input" id="txt-music" placeholder="Ejemplo: Jazz">
+                       </div>
+                    </div>
+               </div>
+               <div class="form-group">
+                     <label class="descripcion">¿Eres Director de Orquesta?</label>
+                    <div class="row">
+                      
+                       <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="img/conductor.png" class="form-element icono" >
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <label class="radio-inline" style="color:#fff">
+                          <input type="radio" name="inlineRadioOptions" class="radio-btn1" value="option1">Si
+                        </label>
+                        <label class="radio-inline" style="color:#fff">
+                          <input type="radio" name="inlineRadioOptions" class="radio-btn2" value="option2">No
+                        </label>
+                       </div>
+                    </div>
+               </div>
+               </div>
+           </div>
+           <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="submit">
+                 <center>
+                     <button type="submit" id="btn-register-two">Registrarse</button>
+                 </center>
+                  
+              </div>               
+           </div>
+       </div>
+     </div>
+    </div>
+   </div>
+   
+   <!-- AngularJS lo usaremos para hacer validaciones en el Frot-end-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    
+</body>
+</html>

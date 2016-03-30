@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+      
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        
+       
+      <link rel="stylesheet" href="css/style.css">
+    
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Changa+One" />
+      
+</head>
+<body>
+    <div class="container">
+     <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="columna-principal">
+           <div id="contenedor-titulo">
+              <div class="centrado">
+                  <h2 id="titulo">Información Personal</h2>
+                  <img src="img/scorenote.jpg" id="logo">
+              </div>
+           </div>
+           <div id="contenedor-principal-one" class="row">
+               <div class="col-xs-9 col-sm-8 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3" id="contenedor-formulario">
+                  <div class="centrado" id="centrado-one">
+                  
+                   <form name="mainForm" id="mainForm">
+                       <div class="form-group">
+                           <label class="descripcion">Nombre</label>       
+                           <input type="text" class="form-control input" id="name" name="name" placeholder="Nombre" ng-model="bookmark.name" ng-required="true">
+                       </div>
+                       <div class="form-group">
+                            <label class="descripcion">Apellido</label>
+                            <input type="text" class="form-control input" id="txt-Last" placeholder="Apellido">
+                       </div>
+                       <div class="form-group">
+                           <label class="descripcion">Contraseña</label>       
+                           <input type="text" class="form-control input" id="txt-Name" placeholder="Contraseña">
+                       </div>
+                       <div class="form-group">
+                           <label class="descripcion">Confirmar contraseña</label>       
+                           <input type="text" class="form-control input" id="txt-Name" placeholder="Contraseña">
+                       </div>
+                       <div class="form-group">
+                           <label class="descripcion">E-mail</label>       
+                           <input type="text" class="form-control input" id="txt-Name" placeholder="E-mail">
+                       </div>               
+
+                    </form>
+                    <center>
+                        <button type="submit" id="btn-register-one">Entrar</button>
+                    </center>
+                    
+                   </div>
+               </div> 
+            </div>               
+        </div>
+       </div>
+     </div>
+     
+    <!-- AngularJS lo usaremos para hacer validaciones en el Frot-end-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>   
+</body>
+</html>

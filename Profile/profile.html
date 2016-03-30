@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Material Framework is an easy to use Material Design Framework for the web.">
+    
+	<title>Musician Profile</title>
+	
+    <!-- Material Design Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+    
+    <!--  Fontastic  -->
+    <link href="https://file.myfontastic.com/NtwUmmTSbSbThALJKo2gMk/icons.css" rel="stylesheet">
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet">
+    
+    <!--  Materialize  -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+	
+	
+	<link rel="stylesheet" href="css/material.css"/>
+	<link rel="stylesheet" href="css/demo.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+<div class="sidemenu sidebar responsive" id="navigation-sidemenu" hidden>
+	<div class="sidemenu-hero">
+		<img class="sidemenu-hero-image" src="img/menuimg2.jpg">
+		<h1 class="title serif">Menu</h1>
+	</div>
+	<ul class="menu">
+	    <li>	        
+            <div class="text-input-container" id="buscar">     
+                <input type="text" class="text-input border-green-500" placeholder="Buscar" id="search" />
+            </div>      
+	    </li>
+	    <li><p></p></li>		
+		<li ripple><a href="#inicio"><i class="icon-home menu-iconos"></i>Inicio</a></li>
+		<li ripple><a href="#perfil"><i class="icon-profile menu-iconos"></i>Perfil</a></li>
+		<li ripple><a href="#amigos"><i class="icon-friends menu-iconos"></i>Amigos</a></li>
+		<p></p>
+		<li class="divider"></li>
+		<li ripple><a href="#atril"><i class="icon-lectern menu-iconos"></i>Atril</a></li>
+		<li ripple><a href="#scratch"><i class="icon-scratch menu-iconos"></i>scratch</a></li>
+		</li>
+		<p></p>
+		<li class="divider"></li>
+		<h2 class="subheading">Cloud</h2>
+		<li ripple><a href="#scores"><i class="icon-score menu-iconos"></i>scores</a></li>
+		<li ripple><a href="#composiciones"><i class="icon-composition menu-iconos"></i>composiciones</a></li>
+		<li ripple><a href="#pistas"><i class="icon-vynil menu-iconos"></i>pistas</a></li>
+		
+		
+	</ul>
+</div>
+<div class="main-content">
+    <div class="toolbar bg-blue-500 color-white">
+        <button class="icon-button" onclick="SideMenu.toggle(document.querySelector('#navigation-sidemenu'))"><i class="icon-menu"></i></button>
+        <label class="toolbar-label">ScoreNote</label>
+        <span class="float-right">        
+            <button class="icon-button"><i class="icon-settings"></i></button>
+            <button class="icon-button"><i class="icon-logout"></i></button>                     
+        </span>	
+        
+    </div>
+    <!--Secciones de cada opcion del menu-->
+    <div class="navigation-section" id="pistas">
+      <div class="section">
+        <div class="container-fluid">
+          <div class="col-md-12">
+          <div class="main-buttons">
+             <a class="btn btn-warning waves-effect waves-light light-blue darken-4"><i class="icon-cloud-upload iconos-cloud-pistas"></i> Subir Pista</a>
+             <a class="btn btn-warning waves-effect waves-light light-blue darken-4"><i class="icon-cloud-download iconos-cloud-pistas"></i> Descargar Pistas ZIP</a>      
+          </div> 
+        
+             
+        <!-- PISTA 1   -->
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/piano-logo.png" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Concert Etude <br>
+                        Autor: Paulo César Ganado Caro <br>
+                        Genero: Sinfonico                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+
+        <!-- PISTA 2   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/menuimg.jpg" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Ritmo Colombiano <br>
+                        Autor: Juan Camilo Palacio  <br>
+                        Genero: Cumbia                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+
+        <!-- PISTA 3   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/menuimg.jpg" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Ritmo Colombiano <br>
+                        Autor: Juan Camilo Palacio  <br>
+                        Genero: Cumbia                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+
+        <!-- PISTA 4   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/piano-logo.png" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Concert Etude <br>
+                        Autor: Paulo César Ganado Caro <br>
+                        Genero: Sinfonico                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+
+        <!-- PISTA 5   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/menuimg.jpg" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Ritmo Colombiano <br>
+                        Autor: Juan Camilo Palacio  <br>
+                        Genero: Cumbia                     
+                     </p>          
+                </div>
+            </div>  
+         </div>
+        </div>
+        <!-- PISTA 6   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/piano-logo.png" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Concert Etude <br>
+                        Autor: Paulo César Ganado Caro <br>
+                        Genero: Sinfonico                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+
+        <!-- PISTA 7   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/menuimg.jpg" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Ritmo Colombiano <br>
+                        Autor: Juan Camilo Palacio  <br>
+                        Genero: Cumbia                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+
+        <!-- PISTA 8   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/piano-logo.png" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Concert Etude <br>
+                        Autor: Paulo César Ganado Caro <br>
+                        Genero: Sinfonico                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+        <!-- PISTA 9   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/piano-logo.png" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Concert Etude <br>
+                        Autor: Paulo César Ganado Caro <br>
+                        Genero: Sinfonico                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>
+
+        <!-- PISTA 10   -->    
+        <div class="panel panel-default">     
+         <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-sm-12">
+                    <img src="img/piano-logo.png" class="img-resposive img-pistas" >    
+                </div>
+                <div class="">               
+                   <img src="img/play-backward.png" class="player">
+                   <img src="img/play.png" class="player">
+                   <img src="img/play-forward.png" class="player">
+                </div>                
+            </div> 
+            <div class="row">
+                 <div class="col-xs-8 col-sm-12">
+                     <p class="descripcion">
+                        Titulo: Concert Etude <br>
+                        Autor: Paulo César Ganado Caro <br>
+                        Genero: Sinfonico                     
+                     </p>           
+                </div>
+            </div>  
+         </div>
+        </div>  
+      </div>
+    </div>
+</div> 
+</div> 
+    
+    <div class="navigation-section" id="amigos">
+       <div class="section">
+           <div class="container-fluid">
+              <div class="row">
+                 
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div>
+                  
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div>
+                  
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div> 
+                     
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div>                               
+              </div>
+              
+              <div class="row">
+                 
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div>
+                  
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div>
+                  
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div> 
+                     
+                  <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/paulo.JPG">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Paulo Cesar Ganado<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Paulo<i class="material-icons right">close</i></span>
+                      <p>Trompetista de la Red de escuelas de música de Medellin. </p>
+                      <p>Del año 2009-2012 fué trompetista solista de la Banda sinfónica de la Universidad de Antioquia</p>
+                      <p>Apasionado por la composición y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>
+                      <p>Tiene una especialización en Composicion y arreglos</p>
+                      <p>Apasionado por la improvización en Jazz and Blues</p>                      
+                   </div>
+                  </div>                               
+              </div>
+            
+              <div class="row">
+                 <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>
+                  
+                   <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>
+                  
+                   <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>
+                  
+                   <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>                         
+              </div>
+                           
+              <div class="row">
+                 <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>
+                  
+                   <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>
+                  
+                   <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>
+                  
+                   <div class="card col-xs-12">
+                   <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator friend-photo" src="img/juan-camilo.jpg">
+                   </div>
+                   <div class="card-content">
+                      <span class="activator black-text text-darken-4 friends-name">Juan Camilo Palacio<i class="material-icons right activator">more_vert</i></span>                
+                   </div>
+                   <div class="card-reveal">
+                      <span class="card-title friends-name grey-text text-darken-4">Acerca de Camilo<i class="material-icons right">close</i></span>
+                      <p> inicié la música a los 13 años, empecé con guitarra, empezó la goma cuando vi por primera vez una guitarra eléctrica y un amigo tocoandola, después de eso empezó todo, me compraron una acústica y después una eléctrica y me volví super rockero jajajajaja, después vi q no había mucho baterista y me emocioné por la batería a falta de bateristas, entonces me metí a clases de batería y me enamoré totalmente de ella y me gradué de eso, ps tengo una técnica como baterista y ahí voy, ya no tan rockero sino tocando de todo, más q todo salsa y rock</p>                      
+                   </div>
+                  </div>                         
+              </div>         
+                            
+           </div>
+       </div>
+        
+    </div>
+
+    <div class="navigation-section" id="atril">
+        <div class="section">
+            <div class="container-fluid">
+                <img src="img/score1.png" class="score-in-lectern img-responsive">
+            </div>
+        </div>
+        <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 20px; right: 24px;">
+            <a class="btn-floating btn-large red">
+              <i class="large icon-pencil" id="float-button-pencil"></i>
+            </a>
+            <ul>
+              <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+              <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+              <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+              <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
+     </div>
+               
+</div>
+
+
+
+<!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+<!--    <script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    
+    <!-- Material Design -->
+    <script src="js/material.js"></script>
+    <script src="js/demo.js"></script>
+    
+    <!--  Materialize -->
+    <script src="js/materialize.min.js"></script>
+
+</body>
+</html>
